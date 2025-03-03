@@ -55,6 +55,11 @@ This repository contains the following material:
 * `talk-materials/talk-sources.md` contains all of the papers and other sources Jodie Burchell used for her talk. It also contains all of her image credits.
 * `talk-materials/beyond-the-hype.pdf` contains a copy of her slides.
 
+## Troubleshooting
+
+- `When I run the script, the code breaks while trying to create the embeddings ('Creating document embeddings...') and the following error message gets displayed: 'input length exceeds maximum context length'`
+  - Solution(s): Try switching to an Embeddings model that supports larger input lengths. For example, switching from `all-minilm` to `nomic-embed-test`.
+
 ---
 
 The repo contains the following materials for Jodie Burchell's talk delivered at GOTO Amsterdam 2024.
