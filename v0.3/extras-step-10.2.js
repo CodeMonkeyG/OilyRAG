@@ -106,6 +106,7 @@ class PdfQA {
 const pdfDocumentsPath = "../materials/papers/";
 
 const pdfQa = await new PdfQA({ 
+  // Make sure to pick the right model, depending on the ones you've downloaded via Ollama:
   model: "llama3.1:latest", 
   pdfDocumentsPath,
   chunkSize: 1000,
