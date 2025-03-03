@@ -198,6 +198,24 @@
 
 # Extras
 
+## STEP 10.2: Load Multiple PDF Documents from a Directory
+
+  The script [/v0.3/extras-step-10.2.js](../v0.3/extras-step-10.2.js) answers the following question: [`how to embed multiple files?`](https://www.youtube.com/watch?v=NE2gl94CxLU&lc=UgwCacK44SKM7LQXrWl4AaABAg.AFC5sZR6AsVAFChRGq_P6o).
+
+  The script integrates code from the [documentation](https://js.langchain.com/docs/integrations/document_loaders/file_loaders/pdf/#loading-directories) which loads multiple PDF files from a specified directory path:
+
+  ```js
+  const pdfDocumentsPath = "../materials/papers/";
+
+  const pdfQa = await new PdfQA({ 
+    model: "llama3.1:latest", 
+    pdfDocumentsPath,
+    ...
+  }).init();
+  ``` 
+
+  **Important:** the script is based on version `0.3` of LangChain as opposed to the scripts found inside the `step-by-step` folder which are all based on version `0.2`. The script also uses the `llama3.1` model via Ollama. Feel free to configure a custom model, either through the `Ollama` class found inside the `initChatModel()` method or by importing and using another chat model [available from LangChain](https://js.langchain.com/docs/integrations/chat/).
+
 ## STEP 11: Optimizations: Temperature & Text Splitter
 
   Here are some extra optimizations and updates to the code from the previous step (10):

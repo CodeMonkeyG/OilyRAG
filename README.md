@@ -80,4 +80,5 @@ The repo contains the following materials for Jodie Burchell's talk delivered at
 
 ## Todo
 
-- [ ] Migrate to version **v0.3**
+- [ ] Migrate to version **v0.3** of `LangChain`
+  - [x] Created folder `v0.3` that includes a variation of `step-10.js` ported to version `v0.3`. 

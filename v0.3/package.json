@@ -1,0 +1,16 @@
+{
+  "name": "step-by-step",
+  "version": "1.0.0",
+  "description": "",
+  "main": "extras-step-10.2.js",
+  "type": "module",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/community": "^0.3.33",
+    "@langchain/ollama": "^0.2.0",
+    "pdf-parse": "^1.1.1"
+  }
+}
